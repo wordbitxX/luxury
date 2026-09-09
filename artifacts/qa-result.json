@@ -1,0 +1,14 @@
+{
+  "pass": false,
+  "assertions": [
+    "Homepage responds successfully",
+    "Food gallery with filters present",
+    "WordbitX showcase and footer credits visible",
+    "Primary navigation is focused",
+    "Secondary editorial pages remain linked",
+    "Signature selector updates the dish",
+    "Signature dish opens the order bag"
+  ],
+  "errors": [],
+  "failure": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByRole('dialog', { name: 'Your order', exact: true }).getByRole('textbox', { name: 'Full name', exact: true })\n"
+}
