@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { DEMO_BASE, MEDIA } from "@/lib/data/site";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   title: "Lahore Food Guides — Where to Eat & What to Order",
   description: "Lahore food guides by Maison Noor: best restaurants, rooftop dining, BBQ, desi food, family dinners, DHA, MM Alam Road and birthday dinners.",
   alternates: { canonical: DEMO_BASE + "/guides" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/guides" },
 };
 
 export default function GuidesPage() {

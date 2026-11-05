@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import { PageHero } from "@/components/PageHero";
 import { ConciergeChat } from "@/components/flows";
 import { Eyebrow } from "@/components/ui";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Ask the Maison Noor AI concierge for dish recommendations, ingredient and allergen answers, wine pairings, hours or reservation guidance — a restaurant AI experience designed by WordbitX.",
   alternates: { canonical: DEMO_BASE + "/concierge" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/concierge" },
 };
 
 export default function ConciergePage() {

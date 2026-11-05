@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import Image from "@/components/RestaurantImage";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/motion";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Meet Chef Elena Marchetti, founder and executive chef of Maison Noor — her biography, cooking philosophy and the milestones behind Lahore's hearth kitchen.",
   alternates: { canonical: DEMO_BASE + "/chef" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/chef" },
 };
 
 export default function ChefPage() {

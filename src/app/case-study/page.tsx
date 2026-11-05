@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "A WordbitX case study: designing and developing Maison Noor — a premium restaurant digital experience combining storytelling, interactive menus, online ordering, reservations and an AI concierge.",
   alternates: { canonical: DEMO_BASE + "/case-study" },
   openGraph: {
+      url: DEMO_BASE + "/case-study",
     title: "WordbitX Case Study — Luxury Restaurant Digital Experience",
     description:
       "How WordbitX designed and developed a complete premium restaurant platform: editorial design, interactive menu, ordering, reservations and AI concierge.",
