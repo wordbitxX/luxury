@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import Image from "@/components/RestaurantImage";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/motion";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Private dining at Maison Noor — the Salon for 8–12 guests, the Chef's Table inside the kitchen, celebrations and corporate evenings up to a full buyout of 60.",
   alternates: { canonical: DEMO_BASE + "/private-dining" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/private-dining" },
 };
 
 export default function PrivateDiningPage() {

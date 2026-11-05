@@ -40,7 +40,7 @@ export default function MenuPage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Btn href="/order" variant="light">Try ordering</Btn>
-              <Btn href="https://www.wordbitxtech.com/contact" variant="outline" className="!border-cream/40 !text-cream hover:!bg-cream hover:!text-ink">Get a QR menu</Btn>
+              <Btn href="https://wordbitx.com/contact" variant="outline" className="!border-cream/40 !text-cream hover:!bg-cream hover:!text-ink">Get a QR menu</Btn>
             </div>
           </div>
           <div className="mx-auto w-fit border border-cream/20 bg-cream/[0.04] p-6 text-center">

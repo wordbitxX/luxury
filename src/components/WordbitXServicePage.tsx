@@ -10,9 +10,10 @@ export function serviceMetadata(page: ServicePage): Metadata {
   return {
     title: page.title,
     description: page.description,
-    keywords: [page.primaryTopic, ...page.keywords, "WordbitX", "wordbitxtech.com"],
+    keywords: [page.primaryTopic, ...page.keywords, "WordbitX", "wordbitx.com"],
     alternates: { canonical: `${DEMO_BASE}/${page.slug}` },
     openGraph: {
+      url: `${DEMO_BASE}/${page.slug}`,
       title: `${page.title} · WordbitX`,
       description: page.description,
       images: [{ url: px(page.image, 1200, 630), width: 1200, height: 630, alt: page.imageAlt }],
@@ -134,7 +135,7 @@ export function WordbitXServicePage({ page }: { page: ServicePage }) {
               <Eyebrow>Explore WordbitX capabilities</Eyebrow>
               <h2 className="display-serif mt-3 text-3xl text-ink">Related services</h2>
             </div>
-            <a href={WORD_BIT_X.url} target="_blank" rel="noopener noreferrer" className="hidden text-[11px] font-semibold uppercase tracking-[0.2em] text-bronze-deep hover:text-ink sm:block">wordbitxtech.com ↗</a>
+            <a href={WORD_BIT_X.url} target="_blank" rel="noopener noreferrer" className="hidden text-[11px] font-semibold uppercase tracking-[0.2em] text-bronze-deep hover:text-ink sm:block">wordbitx.com ↗</a>
           </div>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {related.map((item) => (

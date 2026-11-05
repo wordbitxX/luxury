@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Order Maison Noor for pickup or delivery across central Lahore. Choose dishes, customise, review your bag and confirm — a complete restaurant online ordering experience.",
   alternates: { canonical: DEMO_BASE + "/order" },
   openGraph: {
+      url: DEMO_BASE + "/order",
     title: "Order Online — Maison Noor",
     description:
       "A complete restaurant online ordering system — browse, customise, and order for pickup or delivery.",

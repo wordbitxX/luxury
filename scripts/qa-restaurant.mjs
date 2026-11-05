@@ -25,7 +25,7 @@ try {
   const response = await page.goto(base, { waitUntil: 'networkidle' });
   test('Homepage responds successfully', response.status() === 200);
   test('Food gallery with filters present', await page.locator('#gallery').count() === 1 && (await page.locator('body').innerText()).includes('From the Fire'));
-  test('WordbitX showcase and footer credits visible', await page.locator('#built-by-wordbitx').count() === 1 && await page.locator('footer a[href="https://www.wordbitxtech.com/"]').count() > 0);
+  test('WordbitX showcase and footer credits visible', await page.locator('#built-by-wordbitx').count() === 1 && await page.locator('footer a[href="https://wordbitx.com/"]').count() > 0);
   test('Primary navigation is focused', await page.getByRole('navigation', { name: 'Primary', exact: true }).getByRole('link').allTextContents().then(t => JSON.stringify(t) === JSON.stringify(['Menu', 'Experience', 'Private Dining', 'Order Online', 'Find Us'])));
   test('Secondary editorial pages remain linked', await page.locator('footer a[href="/story"], footer a[href="/chef"], footer a[href="/journal"]').count() === 3);
   await page.getByRole('button', { name: 'Next signature dish', exact: true }).click();

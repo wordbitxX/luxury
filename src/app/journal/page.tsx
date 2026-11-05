@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import Image from "@/components/RestaurantImage";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "The Maison Noor journal — seasonal ingredients, behind the kitchen, chef stories, dining guides, food pairings and restaurant events from Lahore's hearth kitchen.",
   alternates: { canonical: DEMO_BASE + "/journal" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/journal" },
 };
 
 export default function JournalPage() {

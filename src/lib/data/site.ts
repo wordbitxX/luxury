@@ -3,16 +3,16 @@
 /*  Fictional premium restaurant demo — digital experience by WordbitX */
 /* ------------------------------------------------------------------ */
 
-/* Future deployment base — keeps canonicals & sitemap architecture-ready */
-export const DEMO_BASE = "https://www.wordbitxtech.com/maison-noor";
+/* Public demo origin — separate from the WordbitX agency website. */
+export const DEMO_BASE = "https://luxury.wordbitx.pk";
 
 export const WORD_BIT_X = {
   name: "WordbitX",
-  url: "https://www.wordbitxtech.com/",
-  displayDomain: "wordbitxtech.com",
-  contactUrl: "https://www.wordbitxtech.com/contact",
-  servicesUrl: "https://www.wordbitxtech.com/services",
-  hospitalityUrl: "https://www.wordbitxtech.com/industries/hospitality",
+  url: "https://wordbitx.com/",
+  displayDomain: "wordbitx.com",
+  contactUrl: "https://wordbitx.com/contact",
+  servicesUrl: "https://wordbitx.com/services",
+  hospitalityUrl: "https://wordbitx.com/industries/hospitality",
   blurb:
     "Custom websites, software, mobile apps and AI-powered experiences. Designed and developed in Pakistan, for businesses worldwide.",
   /* Primary contact is Pakistan; USA line serves international clients. */

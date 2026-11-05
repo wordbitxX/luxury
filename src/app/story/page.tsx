@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import Image from "@/components/RestaurantImage";
 import { PageHero } from "@/components/PageHero";
 import { Reveal, Parallax } from "@/components/motion";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "The story of Maison Noor — how an ingredient becomes an experience. Ingredient, preparation, fire, plate and experience: the five movements of a hearth kitchen in Lahore.",
   alternates: { canonical: DEMO_BASE + "/story" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/story" },
 };
 
 export default function StoryPage() {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DEMO_BASE } from "@/lib/data/site";
 import Link from "next/link";
 import LoginForm from "./LoginForm";
 import { Logo } from "@/components/ui";
@@ -6,6 +7,7 @@ import { getSession } from "@/lib/admin/auth";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
+  alternates: { canonical: DEMO_BASE + "/admin/login" },
   title: "Admin · Sign in",
   description: "Maison Noor admin login",
   robots: { index: false, follow: false },

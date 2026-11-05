@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import { PageHero } from "@/components/PageHero";
 import { Btn, Eyebrow } from "@/components/ui";
 import { DEMO_BASE, MEDIA, SITE, WHATSAPP_DISPLAY } from "@/lib/data/site";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Find Maison Noor at 7-C, The Boulevard, Gulberg III, Lahore. Opening hours, valet and parking information, and directions for dinner Tuesday to Sunday.",
   alternates: { canonical: DEMO_BASE + "/location" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/location" },
 };
 
 export default function LocationPage() {

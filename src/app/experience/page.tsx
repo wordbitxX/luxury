@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import Image from "@/components/RestaurantImage";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   title: "The Evening — The Guest Experience",
   description: "Arrival, the table, the kitchen and the final course. Discover the Maison Noor guest journey, a fictional fine-dining experience created by WordbitX.",
   alternates: { canonical: DEMO_BASE + "/experience" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/experience" },
 };
 
 export default function ExperiencePage() {

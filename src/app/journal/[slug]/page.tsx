@@ -24,6 +24,7 @@ export async function generateMetadata({
     description: a.excerpt,
     alternates: { canonical: `${DEMO_BASE}/journal/${a.slug}` },
     openGraph: {
+      url: `${DEMO_BASE}/journal/${a.slug}`,
       title: `${a.title} — Maison Noor Journal`,
       description: a.excerpt,
       type: "article",

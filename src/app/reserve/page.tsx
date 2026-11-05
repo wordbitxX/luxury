@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metadata as siteMetadata } from "@/app/layout";
 import { PageHero } from "@/components/PageHero";
 import { ReservationFlow } from "@/components/flows";
 import { Eyebrow, Btn } from "@/components/ui";
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Reserve your table at Maison Noor in six simple steps — date, guests, time, seating, details and confirmation. A premium restaurant reservation experience with the Chef's Counter and Salon.",
   alternates: { canonical: DEMO_BASE + "/reserve" },
+  openGraph: { ...siteMetadata.openGraph, url: DEMO_BASE + "/reserve" },
 };
 
 export default function ReservePage() {
